@@ -14,7 +14,9 @@
     "react-router-dom": "^6.12.1",
     "react-scripts": "5.0.1",
     "react-scroll-to-bottom": "^4.2.0",
+    "react-slick": "^0.29.0",
     "sass": "^1.63.3",
+    "slick-carousel": "^1.8.1",
     "socket.io-client": "^4.6.2",
     "web-vitals": "^2.1.4"
   },

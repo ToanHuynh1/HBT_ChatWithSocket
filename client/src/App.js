@@ -4,6 +4,7 @@ import Header from './components/header/Header.js';
 import About from './components/about/About';
 import Home from './components/home/Home';
 import Footer from './components/footer/Footer';
+import Chat from './components/chat/Chat';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <div className="App">
           <Routes>
             <Route path='/about' element={<About/>}></Route>
+            <Route path='/chat' element={<Chat/>}></Route>
             <Route path='/' element={<Home/>}></Route>
           </Routes>
         </div>

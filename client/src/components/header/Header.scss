@@ -9,7 +9,7 @@
         width: 30%;
         .img-logo{
             width: 150px;
-            height: 60px;
+            height: 70px;
         }
     }
     .right
@@ -26,12 +26,18 @@
 
         .home {
             text-decoration: none;
-            color: black;
+            color: white;
+
         }
 
         .about {
             text-decoration: none;
-            color: black;
+            color: white;
+        }
+
+        .chat {
+            text-decoration: none;
+            color: white;
         }
     }
 }

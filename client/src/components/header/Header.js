@@ -1,8 +1,8 @@
 import React from 'react'
 import './Header.scss'
 import { NavLink, Navigate } from 'react-router-dom'
-import logochat from '../../assets/image/logochat.png'
 import { useNavigate } from 'react-router-dom';
+import logochat from '../../assets/image/logochat.png'
 
 const Header = () => {
  
@@ -19,6 +19,10 @@ const Header = () => {
         <div className='right'>
             <NavLink className='home' to="/" exact>
                 Home
+            </NavLink>
+
+            <NavLink className='chat' to="/chat" exact>
+                Chat
             </NavLink>
 
             <NavLink className='about' to="/about" exact>
