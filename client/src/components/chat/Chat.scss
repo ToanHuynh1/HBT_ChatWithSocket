@@ -1,0 +1,51 @@
+.chat-container {
+    width: 25%;
+    margin: auto;
+    margin-top: 100px;
+    height: 50%;
+    border: 1px solid rgb(167, 217, 173);
+    border-radius: 10px;
+    background-color: rgb(230, 225, 218);
+}
+
+.chat-container .content-name {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.chat-container .content-name input {
+    width: 70%;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.chat-container .title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.chat-container .btn-join {
+    width: 75%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(137, 218, 134);
+    outline: none;
+    border: none;
+}
+
+@media screen and (max-width: 768px) {
+    .chat-container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .chat-container {
+        width: 90%;
+    }
+}

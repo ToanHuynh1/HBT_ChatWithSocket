@@ -10,25 +10,25 @@ const Header = () => {
 
   return (
     <div className='container'>
-        <div className='left'>
-            <img className='img-logo' src={logochat} onClick={() => {
-                navigate("/")
-            }}/>
-        </div>
+            <div className='left'>
+                <img className='img-logo' src={logochat} onClick={() => {
+                    navigate("/")
+                }}/>
+            </div>
 
-        <div className='right'>
-            <NavLink className='home' to="/" exact>
-                Home
-            </NavLink>
+            <div className='right'>
+                <NavLink className='home' to="/" exact>
+                    Home
+                </NavLink>
 
-            <NavLink className='chat' to="/chat" exact>
-                Chat
-            </NavLink>
+                <NavLink className='chat' to="/chat" exact>
+                    Chat
+                </NavLink>
 
-            <NavLink className='about' to="/about" exact>
-                About
-            </NavLink>
-        </div>
+                <NavLink className='about' to="/about" exact>
+                    About
+                </NavLink>
+            </div>
     </div>
   )
 }
