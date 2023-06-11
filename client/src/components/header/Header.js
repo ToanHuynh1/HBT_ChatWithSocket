@@ -21,8 +21,8 @@ const Header = () => {
                     Home
                 </NavLink>
 
-                <NavLink className='chat' to="/chat" exact>
-                    Chat
+                <NavLink className='room' to="/room" exact>
+                    Room
                 </NavLink>
 
                 <NavLink className='about' to="/about" exact>

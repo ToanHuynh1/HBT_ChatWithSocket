@@ -55,7 +55,7 @@ const DetailChat = ({socket, username, room}) => {
         </div>
         <div className='chat-footer'>
             <input type='text' placeholder='Hello...' onChange={(e) => setCurrentMessage(e.target.value)}/>
-            <button onClick={sendMessage}>Send</button>
+            <i onClick={sendMessage} className="fas fa-paper-plane icon-send" ></i>
         </div>
     </div>
   )

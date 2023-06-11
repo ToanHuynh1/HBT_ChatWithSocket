@@ -1,70 +1,75 @@
-.container-footer
-{
+.container-footer {
     display: flex;
     background-color: #191919;
-
-    .policy
-    {
-        width: 60%;
-
-        ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-
-            li {
-                color: aliceblue;
-            }
-        }
-
-        p {
-            margin: 30px;
-            color: aliceblue;
-        }
+    height: 150px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .container-footer .policy {
+    width: 60%;
+  
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
     }
-
-    .social{
-        width: 20%;
-        .social-icons
-        {
-            display: flex;
-            gap: 20px;
-            i {
-                background-color: rgba(255, 255, 255, 0.1);
-                width: 40px;
-                height: 40px;
-                border-radius: 20px;
-                -webkit-border-radius: 20px;
-                -moz-border-radius: 20px;
-                -ms-border-radius: 20px;
-                -o-border-radius: 20px;
-                line-height: 40px;
-                text-align: center;
-            }
-        }
-        
-        h3 {
-            color: aliceblue;
-        }
+  
+    li {
+      color: aliceblue;
     }
-
-    .app-down
-    {
-        width: 20%;
-
-        h3 {
-            color: aliceblue;
-        }
-
-        .img-app-down
-        {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-
-            span {
-                color: aliceblue;
-            }
-        }
+  
+    p {
+      margin: 30px;
+      color: aliceblue;
     }
-}
+  }
+  
+  .container-footer .social {
+    width: 20%;
+  
+    .social-icons {
+      display: flex;
+      gap: 20px;
+    }
+  
+    .social-icons i {
+      background-color: rgba(255, 255, 255, 0.1);
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+      line-height: 40px;
+      text-align: center;
+    }
+  
+    h3 {
+      color: aliceblue;
+    }
+  }
+  
+  .container-footer .app-down {
+    width: 20%;
+  }
+  
+  .container-footer .app-down h3 {
+    color: aliceblue;
+  }
+  
+  .container-footer .app-down .img-app-down {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .container-footer .app-down .img-app-down span {
+    color: aliceblue;
+  }
+  

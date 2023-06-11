@@ -9,6 +9,10 @@
         .slick-list
         {
             height: 100%;
+
+            .slick-track{
+                height: 100%;
+            }
         }
     }
 }
@@ -64,7 +68,7 @@
         z-index: -2;
         img {
             width: 100vw;
-            height: 100vh;
+            height: 1000px;
             object-fit: cover;
         }
     }

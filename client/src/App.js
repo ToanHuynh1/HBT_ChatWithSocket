@@ -5,23 +5,24 @@ import About from './components/about/About';
 import Home from './components/home/Home';
 import Footer from './components/footer/Footer';
 import Chat from './components/chat/Chat';
+import Room from './components/room/Room';
 
 function App() {
   return (
     <Router>
-
       <Header/>
-
-        <div className="App">
+        <div className="Body">
           <Routes>
             <Route path='/about' element={<About/>}></Route>
-            <Route path='/chat' element={<Chat/>}></Route>
+            <Route path='/chat/:id' element={<Chat/>}></Route>
+            <Route path='/room' element={<Room/>}></Route>
             <Route path='/' element={<Home/>}></Route>
+
           </Routes>
+          
         </div>
-
-      <Footer/>
-
+      {/* <Footer/> */}
+ 
     </Router>
   );
 }

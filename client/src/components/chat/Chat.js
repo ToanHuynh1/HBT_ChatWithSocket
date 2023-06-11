@@ -2,17 +2,18 @@ import React, { useState } from 'react'
 import io from 'socket.io-client'
 import './Chat.scss'
 import DetailChat from './DetailChat'
+import { useParams } from 'react-router-dom'
 
 const socket = io.connect("http://localhost:3001")
 
 const Chat = () => {
     const [userName, setUserName] = useState('')
-    const [room,setRoom] = useState('')
     const [showChat, setShowChat] = useState(false)
+    const { id } = useParams();
 
     const joinRoom = () => {
-        if (userName !== '' && room !== ''){
-            socket.emit("join_room", room)
+        if (userName !== '' && id !== ''){
+            socket.emit("join_room", id)
         }
 
         setShowChat(true)
@@ -30,19 +31,12 @@ const Chat = () => {
                     placeholder='HBT...'
                     onChange={(e) => setUserName(e.target.value)}
                 />
-
-                <input
-                    type='text'
-                    placeholder='Room ID...'
-                    onChange={(e) => setRoom(e.target.value)}
-                />
-
                 <button className='btn-join' onClick={joinRoom}>Tham gia</button>
             </div>
         </div> )
 
         : ( 
-        <DetailChat socket={socket} username={userName} room={room}/>
+        <DetailChat socket={socket} username={userName} room={id}/>
         )
         } 
        
